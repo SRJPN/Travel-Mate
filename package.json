@@ -18,5 +18,8 @@
   "homepage": "https://github.com/SRJPN/Travel-Mate#readme",
   "devDependencies": {
     "mocha": "^2.3.4"
+  },
+  "dependencies": {
+    "command-line-args": "^2.1.4"
   }
 }
