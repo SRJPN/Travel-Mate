@@ -1,0 +1,22 @@
+{
+  "name": "travel-mate",
+  "version": "1.0.0",
+  "description": "A guide who helps to reach your destination",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SRJPN/Travel-Mate.git"
+  },
+  "author": "SRJPN",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SRJPN/Travel-Mate/issues"
+  },
+  "homepage": "https://github.com/SRJPN/Travel-Mate#readme",
+  "devDependencies": {
+    "mocha": "^2.3.4"
+  }
+}
