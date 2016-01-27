@@ -27,5 +27,9 @@ if(options.route){
 	console.log(graph.shortestPath(options.from.join(" "),options.to.join(" ")));
 	console.timeEnd();
 }
+else if(options.pass){
+	console.time('pass');
+	console.log(lib.findPassThrough(graph, options.station))
+}
 
 console.log(options);
