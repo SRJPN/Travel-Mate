@@ -1,0 +1,3 @@
+[submodule "graphs"]
+	path = graphs
+	url = https://github.com/SRJPN/graphs.git
