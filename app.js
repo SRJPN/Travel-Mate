@@ -22,7 +22,7 @@ var cli = commandLineArgs([
 
 var options = cli.parse();
 
-console.log(options);
+// console.log(options);
 
 if(options.route){
   console.time('route');
