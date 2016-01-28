@@ -22,14 +22,20 @@ var cli = commandLineArgs([
 
 var options = cli.parse();
 
+console.log(options);
+
 if(options.route){
-	console.time('route');
-	console.log(graph.shortestPath(options.from.join(" "),options.to.join(" ")));
-	console.timeEnd();
+  console.time('route');
+  console.log(lib.getShortestRoute(graph, options.from,options.to));
+  console.timeEnd('route');
 }
 else if(options.pass){
-	console.time('pass');
-	console.log(lib.findPassThrough(graph, options.station))
+  console.time('pass');
+  console.log(lib.findPassThrough(graph, options.station))
+  console.timeEnd('pass');
 }
-
-console.log(options);
+else if(options.direct){
+  console.time('direct');
+  console.log(lib.getDirectPath(graph, options.from, options.to));
+  console.timeEnd('direct');
+}
